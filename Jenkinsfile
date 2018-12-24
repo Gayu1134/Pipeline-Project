@@ -4,7 +4,7 @@ stages {
 stage('unit Tests') {
 steps {
 sh 'ant -f build.xml -v'
-junit 'reports/results.xml
+junit 'reports/results.xml'
 }
 }
 stage('build') {
