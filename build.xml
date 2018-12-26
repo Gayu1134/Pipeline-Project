@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Rectangle-Build" default="main" basedir=".">
-<property environment="env"/>
+<property environment="env" />
 
 <!-- Sets variables which can later be used. -->
 <!-- The value of a property is accessed via ${} -->
@@ -27,15 +27,12 @@
 <mkdir dir="${dist.dir}" />
 </target>
 
-
 <!-- Compiles the java code (including the usage of library for JUnit -->
-
 <target name="compile" depends="clean, makedir">
 <javac srcdir="${src.dir}" destdir="${build.dir}">
 <classpath refid="class.path" />
 </javac>
 </target>
-
 
 <!--Creates the deployable jar file -->
 <target name="jar" depends="compile">
@@ -46,10 +43,7 @@
 </jar>
 </target>
 
-
 <target name="main" depends="compile, jar">
 <description>Main target</description>
 </target>
 </project>
-
-
