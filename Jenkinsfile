@@ -1,5 +1,5 @@
 pipeline {
-agent any
+  agent any
 stages {
 stage('build') {
 steps {
@@ -18,4 +18,4 @@ always {
 archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 }
 }
-}
+} 
