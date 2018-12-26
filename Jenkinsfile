@@ -3,7 +3,7 @@ agent any
 stages {
 stage('unit Tests') {
 steps {
-sh 'ant -f build.xml -v'
+sh 'ant -f test.xml -v'
 junit 'reports/results.xml'
 }
 }
